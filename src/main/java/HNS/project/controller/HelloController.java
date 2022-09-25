@@ -27,7 +27,7 @@ public class HelloController {
         return "hello" + name; //"hello spring"
     }
 
-    @GetMapping("hello-api") //json스타일로 객체 반환
+    @GetMapping("hello-api") //json 스타일로 객체 반환
     @ResponseBody
     public Hello HelloApi(@RequestParam("name") String name){
         Hello hello = new Hello();
